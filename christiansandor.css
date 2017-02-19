@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: #f0f0f0
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 300px;
+    height: 100%;
+    font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+a {
+    margin: 0 4px;
+}
+
+.fa + span {
+    margin-left: 8px;
+}
+
+#header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 50px;
+    color: #f0f0f0;
+    width: 100%;
+    z-index: 50;
+    height: 110px;
+    font-size: 30px;
+    transition: .2s all ease-in-out
+}
+
+#header a {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 300;
+    padding: 2px 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: .2s background ease-in-out, .2s color ease-in-out
+}
+
+#header a strong {
+    font-weight: 600
+}
+
+#header a:hover {
+    background: #f0f0f0;
+    color: #333
+}
+
+#header #eng {
+    float: right
+}
+
+#header #mail {
+    display: none;
+    background: #f0f0f0;
+    color: #444;
+    margin-left: 5px
+}
+
+#header.mini {
+    height: 60px;
+    font-size: 24px;
+    padding: 10px 15px;
+    background: rgba(60, 60, 60, 0.8)
+}
+
+#promo {
+    display: block;
+    height: 100%;
+    background: #333;
+    text-align: center;
+    overflow: hidden;
+    position: relative
+}
+
+#promo #video {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("https://res.cloudinary.com/christiansandor/image/upload/v1448921829/coffee_kt99cu.gif") no-repeat center center;
+    background-size: cover;
+    opacity: .4
+}
+
+#promo .text-outer {
+    display: table;
+    height: 100%;
+    width: 100%
+}
+
+#promo .text-outer .text-inner {
+    display: table-cell;
+    vertical-align: middle
+}
+
+#promo .text-outer .text-inner .content {
+    display: block;
+    position: relative;
+    padding: 0 20px;
+    z-index: 10;
+    color: #f0f0f0
+}
+
+#promo h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#promo h2 {
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: 300
+}
+
+#promo p {
+    display: inline-block;
+    margin: 60px auto 40px;
+    padding: 10px 15px;
+    max-width: 520px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#promo p img {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 15px 0 0;
+    float: left;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+#promo a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px;
+    padding: 3px 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #f6f6f6;
+    background: #30acfe;
+    transition: .2s all ease-in-out
+}
+
+#promo a:hover {
+    color: #30acfe;
+    background: #fff
+}
+
+.container {
+    display: block;
+    padding: 50px 20px
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+#footer a {
+    display: inline-block;
+    color: #333;
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: .2s all ease-in-out
+}
+
+#footer a.purechat-button-expand {
+    opacity: 0.4;
+    cursor: default;
+    color: #ccc;
+    background: #f0f0f0;
+}
+
+#footer a.purechat-button-available {
+    opacity: 1;
+    cursor: pointer;
+    color: #fff;
+    background: #30acfe;
+}
+
+#footer a:hover {
+    color: #30acfe;
+    background: #fff
+}
+
+#promo #btn-tell-me {
+    padding: 8px 12px;
+}
+
+@media (max-width: 820px) {
+    #header {
+        font-size: 20px;
+        padding: 10px 20px;
+        height: 80px;
+        text-align: left;
+    }
+
+    #header a {
+        text-align: left;
+        font-size: 18px
+    }
+
+    #header a strong {
+        font-size: 20px;
+        display: block
+    }
+
+    #header a:hover {
+        background: none;
+        color: #f6f6f6
+    }
+
+    #header.mini {
+        height: 80px
+    }
+
+    #promo #video video {
+        display: none
+    }
+
+    #promo .text-outer {
+        min-height: 100%
+    }
+
+    #promo .text-outer .text-inner .content {
+        padding: 0 40px
+    }
+
+    #promo h1 {
+        font-size: 20px
+    }
+
+    #promo h2 {
+        font-size: 18px
+    }
+
+    #promo p {
+        margin-top: 20px;
+        padding: 5px 10px;
+        font-size: 14px
+    }
+
+    #promo p img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 5px;
+    }
+
+    #promo a {
+        margin: 0 5px;
+    }
+
+    #footer {
+        font-size: 14px
+    }
+}
