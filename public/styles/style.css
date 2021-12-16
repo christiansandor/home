@@ -100,7 +100,7 @@ html, body {
     }
 }
 
-@media (prefers-contrast: more) or (prefers-contrast: high) {
+@media (prefers-contrast: more) {
     #background {
         display: none;
     }
